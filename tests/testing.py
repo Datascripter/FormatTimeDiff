@@ -1,5 +1,7 @@
 from datetime import datetime, timedelta
 from time import sleep
+import sys
+
 
 
 def formattimediff(outputMode):
@@ -8,10 +10,10 @@ def formattimediff(outputMode):
     try: 
         now 
     except NameError: 
-        now = datetime.now()
-        time_diff = deltaTime - now
-        newCreated = "Y"
-        print("Process Started: ", now)
+        print("""\033[31mERROR! Module:'formattimediff'... 
+Message: 'now = datetime.now()' variable not created. 
+Resolution: Create and set a 'now = datetime.now()' variable where your script work starts\033[0m""")
+        sys.exit()
     else: 
         time_diff = deltaTime - now
 
@@ -35,8 +37,8 @@ def formattimediff(outputMode):
         print("Runtime:", FTDiff)
 
 
-#now = datetime.now()
-#print("Process started at:", now)
+now = datetime.now()
+print("Process started at:", now)
 formattimediff("delta")
 
 sleep(5)
@@ -53,7 +55,7 @@ formattimediff("delta")
 
 sleep(5)
 
-formattimediff("fart")
+formattimediff("something")
 
 sleep(5)
 

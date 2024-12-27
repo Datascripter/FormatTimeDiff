@@ -50,7 +50,7 @@ print("Start Time:", processStart)
 delta = datetime.now()
 print("End Time:",delta)
 
-timeElapsed = ftd.(processStart, delta)
+timeElapsed = ftd(processStart, delta)
 print("Time Elapsed:",timeElapsed)
 
 #Output: 
