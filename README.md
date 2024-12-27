@@ -1,6 +1,6 @@
 # FormatTimeDiff
 
-![version](https://img.shields.io/badge/version-0.2.5-blue)
+![version](https://img.shields.io/badge/version-0.2.7-blue)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 Simply accepts a Start Time and End Time variables created with datetime.now(), calculates the time difference, then outputs a nicely formatted output to use with print() statements with the seconds rounded up for half seconds and greater, down for under half seconds. 
